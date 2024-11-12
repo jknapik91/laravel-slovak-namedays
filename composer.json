@@ -1,5 +1,5 @@
 {
-    "name": "janknapik/slovak-namedays",
+    "name": "janknapik/laravel-slovak-namedays",
     "description": "A Laravel package to get Slovak namedays.",
     "type": "library",
     "license": "MIT",
