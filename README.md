@@ -43,27 +43,23 @@ To use the package, you can call the getSlovakNamedays($date) function to retrie
 ```bash
 use Janknapik\SlovakNamedays\SlovakNamedays;
 
-$date = '01-01';
-$nameday = SlovakNamedays::getSlovakNamedays($date);
+$slovakNamedays = new SlovakNamedays();
+$currentDate = Carbon::now();
+$namedays = $slovakNamedays->getSlovakNamedays($currentDate);
 
-echo "The nameday for $date is: $nameday"; // Output example: The nameday for 01-01 is: Nový Rok
+echo "The nameday for is: $namedays";
 ```
 
-## Handling Custom Dates
-
-To get the nameday for a specific date, pass the date as a string in the format MM-DD:
-
-```bash
-$date = '02-14';
-echo SlovakNamedays::getSlovakNamedays($date); // Output example: Valentín
-```
 ## Configuration
+
 The namedays.json file in the data directory contains the nameday data for every day of the year. The format for each entry is "MM-DD": "Name". You can edit this file if you need to add custom namedays or modify existing entries.
 
 ## License
+
 This package is open-source software, licensed under the [MIT License](https://choosealicense.com/licenses/mit/).
 
 ## Contributing
+
 We welcome contributions from the community! If you'd like to suggest a feature, report a bug, or contribute code, please follow these steps:
 
 Fork the repository.
