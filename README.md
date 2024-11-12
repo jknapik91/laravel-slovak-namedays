@@ -15,7 +15,7 @@ This package provides a simple and convenient way to retrieve Slovak namedays ba
    Run the following command in your terminal to install the package:
 
    ```bash
-   composer require janknapik/slovak-namedays
+   composer require janknapik/laravel-slovak-namedays
    ```
 
 2. **Publish the Configuration (optional):**
