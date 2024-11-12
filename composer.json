@@ -1,0 +1,29 @@
+{
+    "name": "janknapik/slovak-namedays",
+    "description": "A Laravel package to get Slovak namedays.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jan Knapik",
+            "email": "vasemail@example.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.4",
+        "illuminate/support": "^8.0|^9.0|^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Janknapik\\SlovakNamedays\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Janknapik\\SlovakNamedays\\SlovakNamedaysServiceProvider"
+            ]
+        }
+    }
+}
